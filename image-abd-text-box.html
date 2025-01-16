@@ -10,29 +10,38 @@
             margin-top: 0px;
             margin-bottom: 0px;
         }
-        .thumbmail{
+        .cat1{
+            .catface{
+                width: 300px;
+            }
+            display: block;
             width: 300px;
             height: 300px;
-            image-rendering: crisp-edges;
             border-radius: 26px;
         }
         .t1{
+            display:inline-block;
             width: 30px;
             height: 30px;
-            image-rendering: crisp-edges;
+            
             border-radius: 26px;
             border: none;
-            inline-size: 360px;
+            
         }
         search-bar{
+            display: block;
             position: absolute;
+            top: 0;
+            left: 50%;
+            width: 300px;
+            transform: translateX(-50%);
             color: gray;
             background-color: white;
             border: none;
             cursor: pointer;
 
         }
-        .th1{
+            .th1{
             height: 300px;
             width: 300px;
             border-radius: 50%;
@@ -42,20 +51,30 @@
             transition: background-color 1s
                         color .15s;
 
-        }   
-        .th1:hover{
-            box-shadow: 7px -1px  7px  rgb(0 , 0, 0);
-            background-color: gray;
+            }   
+            .th1:hover{
+                box-shadow: 7px -1px  7px  rgb(0 , 0, 0);
+                background-color: gray;
             
-            transition: background-color 1s
+                transition: background-color 1s
                         color .15s;
-        }   
+        }
+        
     </style>
 </head>
 <body>
-    <img class="thumbmail" src="cat-stare.gif" alt="Cat">
-    <img class="th1" src="mock_ST_newSadCat.jpg" alt="nice cat">
     <input class="search-bar" type="text"
             placeholder=" Search">
+
+    <div class="cat1">
+        <img class="thumbmail" src="thumbmails/cat-stare.gif" alt="Cat">
+        <p class="catface"> <strong>Meme cat</strong> showing Face lekfsf efm esfmlsefm eflmeml lsellmf </p>
+    </div>
+
+    <div class=" cat2">
+        <img class="th1" src="thumbmails/mock_ST_newSadCat.jpg" alt="nice cat">
+        <p class="catface"> <strong>Meme cat</strong> showing Face lekfsf efm esfmlsefm eflmeml lsellmf </p>
+    </div>
+    
 </body>
 </html>
