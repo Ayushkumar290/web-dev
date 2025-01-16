@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Image and TextBox</title>
     <style>
+        
         .img{
             margin-top: 0px;
             margin-bottom: 0px;
@@ -23,10 +24,38 @@
             border: none;
             inline-size: 360px;
         }
+        search-bar{
+            position: absolute;
+            color: gray;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+
+        }
+        .th1{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: gray;
+            border: none;
+            box-sizing: border-box;
+            transition: background-color 1s
+                        color .15s;
+
+        }   
+        .th1:hover{
+            box-shadow: 7px -1px  7px  rgb(0 , 0, 0);
+            background-color: gray;
+            
+            transition: background-color 1s
+                        color .15s;
+        }   
     </style>
 </head>
 <body>
     <img class="thumbmail" src="cat-stare.gif" alt="Cat">
     <img class="th1" src="mock_ST_newSadCat.jpg" alt="nice cat">
+    <input class="search-bar" type="text"
+            placeholder=" Search">
 </body>
 </html>
